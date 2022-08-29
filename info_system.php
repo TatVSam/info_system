@@ -28,7 +28,7 @@ $example_persons_array = [
         'fullname' => 'Быстрая Юлия Сергеевна',
         'job' => 'PR-manager',
     ],
-    [
+   [
         'fullname' => 'Шматко Антонина Сергеевна',
         'job' => 'HR-manager',
     ],
