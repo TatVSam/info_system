@@ -4,23 +4,23 @@
         $resultString = "Гендерный состав аудитории:\n---------------------------\n";
     
     
-        $males = array_filter ($persons_array, function ($person) {
+        $men = array_filter ($persons_array, function ($person) {
             return getGenderFromName($person["fullname"]) > 0;
             
         } );
         
-        $maleProportion = round(count($males) / count($persons_array) * 100, 1);
+        $menProportion = round(count($men) / count($persons_array) * 100, 1);
         
-        $resultString .= "Мужчины - $maleProportion%\n";
+        $resultString .= "Мужчины - $menProportion%\n";
         
-        $females = array_filter ($persons_array, function ($person) {
+        $women = array_filter ($persons_array, function ($person) {
             return getGenderFromName($person["fullname"]) < 0;
             
         } );
         
-        $femaleProportion = round(count($females) / count($persons_array) * 100, 1);
+        $womenProportion = round(count($women) / count($persons_array) * 100, 1);
         
-        $resultString .= "Женщины - $femaleProportion%\n";
+        $resultString .= "Женщины - $womenProportion%\n";
         
         $indefinite = array_filter ($persons_array, function ($person) {
             return getGenderFromName($person["fullname"]) == 0;

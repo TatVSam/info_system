@@ -1,7 +1,9 @@
 <?php
         function getGenderFromName($fullname) {
+            
             $genderSum = 0;
             $fullnameParts = getPartsFromFullname($fullname);
+
             if (mb_substr($fullnameParts["patronymic"], -3, 3) == "вна") {
                 $genderSum -= 1;
             } elseif (mb_substr($fullnameParts["patronymic"], -2, 2) == "ич") {

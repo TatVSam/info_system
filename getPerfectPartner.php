@@ -1,10 +1,12 @@
 <?php
+    //функция для вычисления случайного числа с плавающей точкой в заданном диапазоне
     function randomFloat($min = 0, $max = 1) {
         return $min + mt_rand() / mt_getrandmax() * ($max - $min);
     }
 
 
     function getPerfectPartner ($surname, $name, $patronomyc, $persons_array) {
+        
         $fixedSurname = mb_convert_case ($surname, MB_CASE_TITLE);
         $fixedName = mb_convert_case ($name, MB_CASE_TITLE);
         $fixedPatronomyc = mb_convert_case ($patronomyc, MB_CASE_TITLE);

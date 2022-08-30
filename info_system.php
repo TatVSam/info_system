@@ -44,4 +44,5 @@ $example_persons_array = [
         'fullname' => 'Шварцнегер Арнольд Густавович',
         'job' => 'babysitter',
     ],
+  
 ];

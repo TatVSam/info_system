@@ -18,6 +18,7 @@
     ?>
 
     <?php
+        //функция для словесного обозначения пола
         function genderOutput ($genderValue) {
             switch ($genderValue) {
                 case -1:
@@ -96,7 +97,7 @@
 
 
         echo 'getGenderFromName ($example_persons_array[8]["fullname"]) = ' . getGenderFromName ($example_persons_array[8]["fullname"]) . " => ";
-        echo nl2br($genderStr . "\n\n");
+        echo nl2br($genderStr . "\n");
 
 
 
@@ -130,20 +131,20 @@
 
     <style>
 
-    * {
-        padding: 0;
-        margin: 0;    
-    }
+        * {
+            padding: 0;
+            margin: 0;    
+        }
 
-    p {
-        margin: 10px 0px 10px 10px;
-        font: 16px/1.5 Arial, sans-serif;
-    }
+        p {
+            margin: 10px 0px 10px 10px;
+            font: 16px/1.5 Arial, sans-serif;
+        }
 
-    h3 {
-        margin: 15px 0px 15px 20px;
-        font: bold 20px/1.5 Arial, sans-serif;
-    }
+        h3 {
+            margin: 15px 0px 15px 20px;
+            font: bold 20px/1.5 Arial, sans-serif;
+        }
 
 
     </style>
