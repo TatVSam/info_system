@@ -5,12 +5,12 @@
     }
 
 
-    function getPerfectPartner ($surname, $name, $patronomyc, $persons_array) {
+    function getPerfectPartner ($surname, $name, $patronymic, $persons_array) {
         
         $fixedSurname = mb_convert_case ($surname, MB_CASE_TITLE);
         $fixedName = mb_convert_case ($name, MB_CASE_TITLE);
-        $fixedPatronomyc = mb_convert_case ($patronomyc, MB_CASE_TITLE);
-        $fullname = getFullnameFromParts($fixedSurname, $fixedName, $fixedPatronomyc);
+        $fixedPatronymic = mb_convert_case ($patronymic, MB_CASE_TITLE);
+        $fullname = getFullnameFromParts($fixedSurname, $fixedName, $fixedPatronymic);
         $gender = getGenderFromName($fullname);
 
         //если пол не определен, нельзя найти партнера
